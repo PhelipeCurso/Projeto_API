@@ -1,0 +1,100 @@
+[
+
+{   "id": 1,
+    "data": "2025-03-04",
+    "hora": "21:30",
+    "local": "Pueblo Nuevo",
+    "adversario": "Deportivo táchira",
+    "competicao": "libertadores",
+    "etapa": "Fase de Grupos",
+    "concluido": true,
+    "gols_flamengo": 1,
+    "gols_adversario": 0
+},
+{
+    "id": 2,
+    "data": "2025-04-09",
+    "hora": "21:30",
+    "local": "Maracanã",
+    "adversario": "Central Córdoba",
+    "competicao": "libertadores",
+    "etapa": "Fase de Grupos",
+    "concluido": true,
+    "gols_flamengo": 1,
+    "gols_adversario": 2
+},
+{
+    "id": 3,
+    "data": "2025-04-22",
+    "hora": "19:00",
+    "local": "Casa Blanca",
+    "adversario": "LDU",
+    "competicao": "libertadores",
+    "etapa": "Fase de Grupos",
+    "concluido": true,
+    "gols_flamengo": 0,
+    "gols_adversario": 0
+},
+{
+    "id": 4,
+    "data": "2025-05-07",
+    "hora": "21:30",
+    "local": "único Madre de Ciudades",
+    "adversario": "Central Córdoba",
+    "competicao": "libertadores",
+    "etapa": "Fase de Grupos",
+    "concluido": true,
+    "gols_flamengo": 1,
+    "gols_adversario": 1
+},
+{
+    "id": 5,
+    "data": "2025-05-13",
+    "hora": "21:30",
+    "local": "Maracanã",
+    "adversario": "LDU",
+    "competicao": "libertadores",
+    "etapa": "Fase de Grupos",
+    "concluido": true,
+    "gols_flamengo": 2,
+    "gols_adversario": 0
+},
+{
+    "id": 6,
+    "data": "2025-05-28",
+    "hora": "19:00",
+    "local": "Maracanã",
+    "adversario": "Deportivo Táchira",
+    "competicao": "libertadores",
+    "etapa": "Fase de Grupos",
+    "concluido": true,
+    "gols_flamengo": 1,
+    "gols_adversario": 0
+},
+{
+    "id": 7,
+    "data": "2025-08-13",
+    "hora": "21:30",
+    "local": "Maracanã",
+    "adversario": "Internacional",
+    "competicao": "libertadores",
+    "etapa": "Oitavas de Final",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+},
+{
+    "id": 8,
+    "data": "2025-08-20",
+    "hora": "21:30",
+    "local": "Beira-Rio",
+    "adversario": "Internacional",
+    "competicao": "libertadores",
+    "etapa": "Oitavas de Final",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+}
+
+
+]

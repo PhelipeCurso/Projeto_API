@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "data": "2025-06-16",
+    "hora": "22:00",
+    "local": "Lincoln Financial Field, Filadélfia",
+    "adversario": "Espérance de Tunis",
+    "competicao": "supermundial",
+    "etapa": "Fase de Grupos",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  },
+  {
+    "id": 2,
+    "data": "2025-06-20",
+    "hora": "15:00",
+    "local": "Hard Rock Stadium, Miami",
+    "adversario": "Chelsea",
+    "competicao": "supermundial",
+    "etapa": "Fase de Grupos",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  },
+  {
+    "id": 3,
+    "data": "2025-06-24",
+    "hora": "22:00",
+    "local": "Camping World Stadium, Orlando",
+    "adversario": "Los Angeles FC",
+    "competicao": "supermundial",
+    "etapa": "Fase de Grupos",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  }
+]

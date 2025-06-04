@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "data": "2025-05-01",
+    "hora": "20:00",
+    "local": "Arena Castelão",
+    "adversario": "Botafogo-PB",
+    "competicao": "copa do brasil",
+    "etapa": "Terceira Fase",
+    "concluido": true,
+    "gols_flamengo": 2,
+    "gols_adversario": 0
+  },
+  {
+    "id": 2,
+    "data": "2025-05-21",
+    "hora": "21:30",
+    "local": "Maracanã",
+    "adversario": "Fortaleza",
+    "competicao": "copa do brasil",
+    "etapa": "Terceira Fase",
+    "concluido": true,
+    "gols_flamengo": 4,
+    "gols_adversario": 2
+  },
+  {
+    "id": 3,
+    "data": "2025-07-30",
+    "hora": "21:30",
+    "local": "Maracanã",
+    "adversario": "Atlético-MG",
+    "competicao": "copa do brasil",
+    "etapa": "Oitavas de Final",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  },
+  {
+    "id": 4,
+    "data": "2025-08-06",
+    "hora": "20:00",
+    "local": "Arena MRV",
+    "adversario": "Atlético-MG",
+    "competicao": "copa do brasil",
+    "etapa": "Oitavas de Final",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  }
+]

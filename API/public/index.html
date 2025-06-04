@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel de Jogos do Flamengo 2025</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f2f2f2; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #e60000; color: white; }
+    input, select, button { padding: 5px; margin: 5px; }
+    .form { margin-top: 30px; background: #fff; padding: 15px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>📝 Painel de Jogos do Flamengo 2025</h1>
+
+  <label for="filtroCompeticao">Filtrar por competição:</label>
+  <select id="filtroCompeticao">
+    <option value="">Todas</option>
+    <option value="brasileirao">Brasileirão</option>
+    <option value="copa do brasil">Copa do Brasil</option>
+    <option value="libertadores">Copa Libertadores da América</option>
+    <option value="super mundial">Super Mundial de Clubes</option>
+  </select>
+  <button onclick="carregarJogos()">Buscar</button>
+
+  <table id="tabelaJogos">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Data</th>
+        <th>Hora</th>
+        <th>Local</th>
+        <th>Adversário</th>
+        <th>Competição</th>
+        <th>Placar</th>
+        <th>Etapa</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="form">
+    <h2>➕ Adicionar novo jogo</h2>
+    <form id="formNovoJogo">
+      <input type="date" id="data" required>
+      <input type="time" id="hora" required>
+      <input type="text" id="local" placeholder="Local" required>
+      <input type="text" id="adversario" placeholder="Adversário" required>
+      <select id="competicao" required>
+        <option disabled selected>Escolha a competição</option>
+        <option value="brasileirao">Brasileirão</option>
+        <option value="copa do brasil">Copa do Brasil</option>
+        <option value="libertadores">Copa Libertadores da América</option>
+        <option value="super mundial">Super Mundial de Clubes</option>
+      </select>
+      <button type="submit">Salvar Jogo</button>
+    </form>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:3000/jogos';
+
+    function carregarJogos() {
+      const filtro = document.getElementById('filtroCompeticao').value;
+      if (!filtro) return; // não faz requisição se estiver vazio
+
+      const url = `${API_URL}?competicao=${encodeURIComponent(filtro)}`;
+
+      fetch(url)
+        .then(res => res.json())
+        .then(jogos => {
+          const tbody = document.querySelector('#tabelaJogos tbody');
+          tbody.innerHTML = '';
+
+          jogos.forEach(jogo => {
+            const linha = document.createElement('tr');
+            linha.innerHTML = `
+              <td>${jogo.id}</td>
+              <td>${jogo.data}</td>
+              <td>${jogo.hora}</td>
+              <td>${jogo.local}</td>
+              <td>${jogo.adversario}</td>
+              <td>${jogo.competicao}</td>              
+              <td>${jogo.concluido ? `${jogo.gols_flamengo} x ${jogo.gols_adversario}` : 'A disputar'}</td>
+              <td>${jogo.etapa}</td>
+            `;
+            tbody.appendChild(linha);
+          });
+        });
+    }
+
+    document.getElementById('formNovoJogo').addEventListener('submit', e => {
+      e.preventDefault();
+
+      const novoJogo = {
+        data: document.getElementById('data').value,
+        hora: document.getElementById('hora').value,
+        local: document.getElementById('local').value,
+        adversario: document.getElementById('adversario').value,
+        competicao: document.getElementById('competicao').value,
+        concluido: false,
+        gols_flamengo: null,
+        gols_adversario: null
+      };
+
+      fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(novoJogo)
+      })
+        .then(res => res.json())
+        .then(() => {
+          alert('Jogo adicionado!');
+          carregarJogos();
+          e.target.reset();
+        });
+    });
+
+    window.onload = carregarJogos;
+  </script>
+</body>
+</html>

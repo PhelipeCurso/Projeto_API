@@ -1,0 +1,36 @@
+[
+ 
+  {
+    "id": 3,
+    "data": "2025-07-03",
+    "hora": "19:00",
+    "local": "Maracanã",
+    "adversario": "Grêmio",
+    "competicao": "Copa do Brasil",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  },
+  {
+    "id": 4,
+    "data": "2025-08-14",
+    "hora": "21:00",
+    "local": "La Bombonera",
+    "adversario": "Boca Juniors",
+    "competicao": "Copa Libertadores da América",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  },
+  {
+    "id": 5,
+    "data": "2025-12-17",
+    "hora": "16:00",
+    "local": "King Abdullah Stadium",
+    "adversario": "Manchester City",
+    "competicao": "Super Mundial de Clubes",
+    "concluido": false,
+    "gols_flamengo": null,
+    "gols_adversario": null
+  }
+]
