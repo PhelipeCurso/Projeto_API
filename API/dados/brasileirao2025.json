@@ -8,7 +8,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 1
+    "gols_adversario": 1,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/internacional.png"
   },
   {
     "id": 2,
@@ -19,7 +21,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 2,
-    "gols_adversario": 1
+    "gols_adversario": 1,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/vitoria.png"
   },
   {
     "id": 3,
@@ -30,7 +34,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 2,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/gremio.png"
   },
   {
     "id": 4,
@@ -41,7 +47,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 6,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/juventude.png"
   },
 {
     "id": 5,
@@ -52,7 +60,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/vasco.png"
  },
 {
     "id": 6,
@@ -63,7 +73,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 4,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/corinthians.png"
  },
   {
     "id": 7,
@@ -74,7 +86,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 2
+    "gols_adversario": 2,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/cruzeiro.png"
   },
   {
     "id": 8,
@@ -85,7 +99,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/bahia.png"
   },
   {
     "id": 9,
@@ -96,7 +112,9 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/botafogo.png"
   },
   {
     "id": 10,
@@ -107,18 +125,22 @@
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 2,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/palmeiras.png"
   },
   {
     "id": 11,
     "data": "2025-06-01",
-    "hora": "18:30:00",
+    "hora": "18:30",
     "local": "Maracanã",
     "adversario": "Fortaleza",
     "competicao": "Brasileirão",
     "concluido": true,
     "gols_flamengo": 5,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/fortaleza.png"
   },
   {
     "id": 12,
@@ -129,7 +151,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/sport.png"
   },
   {
     "id": 13,
@@ -140,7 +164,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/sao_paulo.png"
   },
   {
     "id": 14,
@@ -151,7 +177,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/santos.png"
   },
   {
     "id": 15,
@@ -162,7 +190,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/fluminense.png"
   },
   {
     "id": 16,
@@ -173,7 +203,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/bragantino.png"
   },
   {
     "id": 17,
@@ -184,7 +216,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0  
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/atletico_mineiro.png"
   },
   {
     "id": 18,
@@ -195,7 +229,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/ceara.png"
   },
   {
     "id": 19,
@@ -206,7 +242,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/mirassol.png"
   },
   {
     "id": 20,
@@ -217,7 +255,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/internacional.png"
   },
   {
     "id": 21,
@@ -228,7 +268,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/vitoria.png"
   },
   {
     "id": 22,
@@ -239,7 +281,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/gremio.png"
   },
   {
     "id": 23,
@@ -250,7 +294,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/juventude.png"
   },
   {
     "id": 24,
@@ -261,7 +307,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/vasco.png"
   },
   {
     "id": 25,
@@ -272,7 +320,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/corinthians.png"
   },
   {
     "id": 26,
@@ -283,7 +333,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/cruzeiro.png"
   },
   {
     "id": 27,
@@ -294,7 +346,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/bahia.png"
   },
   {
     "id": 28,
@@ -305,7 +359,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/botafogo.png"
   },
   {
     "id": 29,
@@ -316,7 +372,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/palmeiras.png"
   },
   {
     "id": 30,
@@ -327,7 +385,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/fortaleza.png"
   },
   {
     "id": 31,
@@ -338,7 +398,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/sport.png"
   },
   {
     "id": 32,
@@ -349,7 +411,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/sao_paulo.png"
   },
   {
     "id": 33,
@@ -360,7 +424,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/santos.png"
   },
   {
     "id": 34,
@@ -371,7 +437,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/fluminense.png"
   },
   {
     "id": 35,
@@ -382,7 +450,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/bragantino.png"
   },
   {
     "id": 36,
@@ -393,7 +463,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/atletico_mineiro.png"
   },
   {
     "id": 37,
@@ -404,7 +476,9 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/ceara.png"
   },
   {
     "id": 38,
@@ -415,9 +489,8 @@
     "competicao": "Brasileirão",
     "concluido": false,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/mirassol.png"
   }
-    
-  
-  
 ]

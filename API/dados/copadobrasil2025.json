@@ -9,19 +9,23 @@
     "etapa": "Terceira Fase",
     "concluido": true,
     "gols_flamengo": 2,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/botafogopb.png"
   },
   {
     "id": 2,
     "data": "2025-05-21",
     "hora": "21:30",
     "local": "Maracanã",
-    "adversario": "Fortaleza",
+    "adversario": "Botafogo-PB",
     "competicao": "copa do brasil",
     "etapa": "Terceira Fase",
     "concluido": true,
     "gols_flamengo": 4,
-    "gols_adversario": 2
+    "gols_adversario": 2,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/botafogopb.png"
   },
   {
     "id": 3,
@@ -33,7 +37,9 @@
     "etapa": "Oitavas de Final",
     "concluido": false,
     "gols_flamengo": null,
-    "gols_adversario": null
+    "gols_adversario": null,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/atleticomg.png"
   },
   {
     "id": 4,
@@ -45,6 +51,8 @@
     "etapa": "Oitavas de Final",
     "concluido": false,
     "gols_flamengo": null,
-    "gols_adversario": null
+    "gols_adversario": null,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/atleticomg.png"
   }
 ]

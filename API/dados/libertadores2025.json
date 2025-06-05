@@ -9,7 +9,9 @@
     "etapa": "Fase de Grupos",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/deportivotachira.png"
 },
 {
     "id": 2,
@@ -21,7 +23,9 @@
     "etapa": "Fase de Grupos",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 2
+    "gols_adversario": 2,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/centralcordoba.png"
 },
 {
     "id": 3,
@@ -33,7 +37,9 @@
     "etapa": "Fase de Grupos",
     "concluido": true,
     "gols_flamengo": 0,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/ldu.png"
 },
 {
     "id": 4,
@@ -45,7 +51,9 @@
     "etapa": "Fase de Grupos",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 1
+    "gols_adversario": 1,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/centralcordoba.png"
 },
 {
     "id": 5,
@@ -57,7 +65,9 @@
     "etapa": "Fase de Grupos",
     "concluido": true,
     "gols_flamengo": 2,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/ldu.png"
 },
 {
     "id": 6,
@@ -69,7 +79,9 @@
     "etapa": "Fase de Grupos",
     "concluido": true,
     "gols_flamengo": 1,
-    "gols_adversario": 0
+    "gols_adversario": 0,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/deportivotachira.png"
 },
 {
     "id": 7,
@@ -81,7 +93,9 @@
     "etapa": "Oitavas de Final",
     "concluido": false,
     "gols_flamengo": null,
-    "gols_adversario": null
+    "gols_adversario": null,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/internacional.png"
 },
 {
     "id": 8,
@@ -93,7 +107,9 @@
     "etapa": "Oitavas de Final",
     "concluido": false,
     "gols_flamengo": null,
-    "gols_adversario": null
+    "gols_adversario": null,
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/img/flamengo.png",
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/img/internacional.png"
 }
 
 
