@@ -134,7 +134,7 @@
   {
     "id": 13,
     "data": "2025-07-13",
-    "hora": false,
+    "hora": null,
     "local": "Maracanã",
     "adversario": "São Paulo",
     "competicao": "Brasileirão",
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "data": "2025-07-16",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Santos",
     "competicao": "Brasileirão",
@@ -156,7 +156,7 @@
   {
     "id": 15,
     "data": "2025-07-20",
-    "hora": false,
+    "hora": null,
     "local": "Maracanã",
     "adversario": "Fluminense",
     "competicao": "Brasileirão",
@@ -167,7 +167,7 @@
   {
     "id": 16,
     "data": "2025-07-23",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Bragantino",
     "competicao": "Brasileirão",
@@ -178,7 +178,7 @@
   {
     "id": 17,
     "data": "2025-07-27",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Atlético Mineiro",
     "competicao": "Brasileirão",
@@ -189,7 +189,7 @@
   {
     "id": 18,
     "data": "2025-08-03",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Ceará",
     "competicao": "Brasileirão",
@@ -200,7 +200,7 @@
   {
     "id": 19,
     "data": "2025-08-10",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Mirassol",
     "competicao": "Brasileirão",
@@ -211,7 +211,7 @@
   {
     "id": 20,
     "data": "2025-08-17",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Internacional",
     "competicao": "Brasileirão",
@@ -222,7 +222,7 @@
   {
     "id": 21,
     "data": "2025-08-24",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Vitória",
     "competicao": "Brasileirão",
@@ -233,7 +233,7 @@
   {
     "id": 22,
     "data": "2025-08-31",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Grêmio",
     "competicao": "Brasileirão",
@@ -244,7 +244,7 @@
   {
     "id": 23,
     "data": "2025-09-14",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Juventude",
     "competicao": "Brasileirão",
@@ -255,7 +255,7 @@
   {
     "id": 24,
     "data": "2025-09-21",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Vasco da Gama",
     "competicao": "Brasileirão",
@@ -266,7 +266,7 @@
   {
     "id": 25,
     "data": "2025-09-28",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Corinthians",
     "competicao": "Brasileirão",
@@ -277,7 +277,7 @@
   {
     "id": 26,
     "data": "2025-10-01",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Cruzeiro",
     "competicao": "Brasileirão",
@@ -288,7 +288,7 @@
   {
     "id": 27,
     "data": "2025-10-16",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Bahia",
     "competicao": "Brasileirão",
@@ -299,7 +299,7 @@
   {
     "id": 28,
     "data": "2025-10-26",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Botafogo",
     "competicao": "Brasileirão",
@@ -310,7 +310,7 @@
   {
     "id": 29,
     "data": "2025-11-05",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Palmeiras",
     "competicao": "Brasileirão",
@@ -321,7 +321,7 @@
   {
     "id": 30,
     "data": "2025-11-19",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Fortaleza",
     "competicao": "Brasileirão",
@@ -332,7 +332,7 @@
   {
     "id": 31,
     "data": "2025-11-23",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Sport",
     "competicao": "Brasileirão",
@@ -343,7 +343,7 @@
   {
     "id": 32,
     "data": "2025-11-30",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "São Paulo",
     "competicao": "Brasileirão",
@@ -354,7 +354,7 @@
   {
     "id": 33,
     "data": "2025-12-03",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Santos",
     "competicao": "Brasileirão",
@@ -365,7 +365,7 @@
   {
     "id": 34,
     "data": "2025-12-07",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Fluminense",
     "competicao": "Brasileirão",
@@ -376,7 +376,7 @@
   {
     "id": 35,
     "data": "2025-12-10",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Bragantino",
     "competicao": "Brasileirão",
@@ -387,7 +387,7 @@
   {
     "id": 36,
     "data": "2025-12-14",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Atlético Mineiro",
     "competicao": "Brasileirão",
@@ -398,7 +398,7 @@
   {
     "id": 37,
     "data": "2025-12-17",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Ceará",
     "competicao": "Brasileirão",
@@ -409,7 +409,7 @@
   {
     "id": 38,
     "data": "2026-12-21",
-    "hora": false,
+    "hora": null,
     "local": "não definido",
     "adversario": "Mirassol",
     "competicao": "Brasileirão",
