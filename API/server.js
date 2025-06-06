@@ -58,7 +58,7 @@ app.get('/jogos', (req, res) => {
     // Adiciona os escudos dinamicamente
     jogos = jogos.map(jogo => ({
       ...jogo,
-      escudo_time: gerarUrlEscudo('Flamengo'),
+      escudo_time: gerarUrlEscudo('fla'),
       escudo_adversario: gerarUrlEscudo(jogo.adversario)
     }));
 
