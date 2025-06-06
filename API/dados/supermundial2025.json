@@ -10,7 +10,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/esperancetunis.png"
   },
   {
@@ -24,7 +24,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/chelsea.png"
   },
   {
@@ -38,7 +38,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/losangelesfc.png"
   }
 ]

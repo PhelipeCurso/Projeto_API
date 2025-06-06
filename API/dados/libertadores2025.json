@@ -10,7 +10,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/deportivotachira.png"
 },
 {
@@ -24,7 +24,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 2,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/centralcordoba.png"
 },
 {
@@ -38,7 +38,7 @@
     "concluido": true,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/ldu.png"
 },
 {
@@ -52,7 +52,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 1,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/centralcordoba.png"
 },
 {
@@ -66,7 +66,7 @@
     "concluido": true,
     "gols_flamengo": 2,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/ldu.png"
 },
 {
@@ -80,7 +80,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/deportivotachira.png"
 },
 {
@@ -94,7 +94,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/internacional.png"
 },
 {
@@ -108,7 +108,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/internacional.png"
 }
 

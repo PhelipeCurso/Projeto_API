@@ -9,7 +9,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 1,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/internacional.png"
   },
   {
@@ -22,7 +22,7 @@
     "concluido": true,
     "gols_flamengo": 2,
     "gols_adversario": 1,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/vitoria.png"
   },
   {
@@ -35,7 +35,7 @@
     "concluido": true,
     "gols_flamengo": 2,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/gremio.png"
   },
   {
@@ -48,7 +48,7 @@
     "concluido": true,
     "gols_flamengo": 6,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/juventude.png"
   },
 {
@@ -61,7 +61,7 @@
     "concluido": true,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/vascodagama.png"
  },
 {
@@ -74,7 +74,7 @@
     "concluido": true,
     "gols_flamengo": 4,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/corinthians.png"
  },
   {
@@ -87,7 +87,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 2,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/cruzeiro.png"
   },
   {
@@ -100,7 +100,7 @@
     "concluido": true,
     "gols_flamengo": 1,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png"
   },
   {
@@ -113,7 +113,7 @@
     "concluido": true,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogo.png"
   },
   {
@@ -126,7 +126,7 @@
     "concluido": true,
     "gols_flamengo": 2,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/palmeiras.png"
   },
   {
@@ -139,7 +139,7 @@
     "concluido": true,
     "gols_flamengo": 5,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/fortaleza.png"
   },
   {
@@ -152,7 +152,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/sport.png"
   },
   {
@@ -165,7 +165,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/sao_paulo.png"
   },
   {
@@ -178,7 +178,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/santos.png"
   },
   {
@@ -191,7 +191,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/fluminense.png"
   },
   {
@@ -204,7 +204,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png"
   },
   {
@@ -217,7 +217,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/atletico_mineiro.png"
   },
   {
@@ -230,7 +230,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/ceara.png"
   },
   {
@@ -243,7 +243,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/mirassol.png"
   },
   {
@@ -256,7 +256,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/internacional.png"
   },
   {
@@ -269,7 +269,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/vitoria.png"
   },
   {
@@ -282,7 +282,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/gremio.png"
   },
   {
@@ -295,7 +295,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/juventude.png"
   },
   {
@@ -308,7 +308,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/vasco.png"
   },
   {
@@ -321,7 +321,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/corinthians.png"
   },
   {
@@ -334,7 +334,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/cruzeiro.png"
   },
   {
@@ -347,7 +347,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png"
   },
   {
@@ -360,7 +360,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogo.png"
   },
   {
@@ -373,7 +373,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/palmeiras.png"
   },
   {
@@ -386,7 +386,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/fortaleza.png"
   },
   {
@@ -399,7 +399,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/sport.png"
   },
   {
@@ -412,7 +412,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/sao_paulo.png"
   },
   {
@@ -425,7 +425,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/santos.png"
   },
   {
@@ -438,7 +438,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/fluminense.png"
   },
   {
@@ -451,7 +451,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png"
   },
   {
@@ -464,7 +464,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/atletico_mineiro.png"
   },
   {
@@ -477,7 +477,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/ceara.png"
   },
   {
@@ -490,7 +490,7 @@
     "concluido": false,
     "gols_flamengo": 0,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/mirassol.png"
   }
 ]

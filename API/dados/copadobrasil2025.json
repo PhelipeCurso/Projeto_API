@@ -10,7 +10,7 @@
     "concluido": true,
     "gols_flamengo": 2,
     "gols_adversario": 0,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogopb.png"
   },
   {
@@ -24,7 +24,7 @@
     "concluido": true,
     "gols_flamengo": 4,
     "gols_adversario": 2,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogopb.png"
   },
   {
@@ -38,7 +38,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/atleticomg.png"
   },
   {
@@ -52,7 +52,7 @@
     "concluido": false,
     "gols_flamengo": null,
     "gols_adversario": null,
-    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/flamengo.png",
+    "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
     "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/atleticomg.png"
   }
 ]
