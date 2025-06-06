@@ -140,7 +140,7 @@
     "gols_flamengo": 5,
     "gols_adversario": 0,
     "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/fortaleza.png"
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/forta.png"
   },
   {
     "id": 12,
@@ -387,7 +387,7 @@
     "gols_flamengo": 0,
     "gols_adversario": 0,
     "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/fortaleza.png"
+    "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/forta.png"
   },
   {
     "id": 31,
