@@ -119,6 +119,40 @@ app.post('/jogos', [
   });
 });
 
+// 🔥 Atualizar placar
+app.patch('/jogos/:id', (req, res) => {
+  const { id } = req.params;
+  const { competicao } = req.query;
+
+  const nomeArquivo = arquivosPorCompeticao[competicao.toLowerCase()];
+  if (!nomeArquivo) {
+    return res.status(400).json({ erro: 'Competição inválida' });
+  }
+
+  const caminho = path.join(__dirname, 'dados', nomeArquivo);
+  fs.readFile(caminho, 'utf8', (err, data) => {
+    if (err) {
+      return res.status(500).json({ erro: 'Erro ao ler os dados' });
+    }
+
+    let jogos = JSON.parse(data);
+    const index = jogos.findIndex(j => j.id == id);
+    if (index === -1) {
+      return res.status(404).json({ erro: 'Jogo não encontrado' });
+    }
+
+    jogos[index] = { ...jogos[index], ...req.body };
+
+    fs.writeFile(caminho, JSON.stringify(jogos, null, 2), err => {
+      if (err) {
+        return res.status(500).json({ erro: 'Erro ao salvar' });
+      }
+      res.json(jogos[index]);
+    });
+  });
+});
+
+
 // 🚀 Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
