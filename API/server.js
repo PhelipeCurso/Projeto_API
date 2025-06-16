@@ -30,7 +30,8 @@ const arquivosPorCompeticao = {
   'brasileirao': 'brasileirao2025.json',
   'libertadores': 'libertadores2025.json',
   'copa do brasil': 'copadobrasil2025.json',
-  'super mundial': 'supermundial2025.json'
+  'super mundial': 'supermundial2025.json',
+  'supermundial': 'supermundial2025.json'
 };
 
 // 📦 Rota para listar jogos
