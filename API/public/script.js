@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/jogos';
+const API_URL = 'https://projetoapi-production-a6f9.up.railway.app/jogos';
 
 function carregarJogos() {
   const filtro = document.getElementById('filtroCompeticao').value;
