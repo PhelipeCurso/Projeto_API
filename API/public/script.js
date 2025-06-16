@@ -38,13 +38,29 @@ function carregarJogos() {
 
 // 🔥 Função para abrir o modal e preencher dados
 function editarPlacar(id, competicao) {
-  document.getElementById('inputIdJogo').value = id;
-  document.getElementById('inputCompeticao').value = competicao;
-  document.getElementById('inputGolsFla').value = '';
-  document.getElementById('inputGolsAdv').value = '';
+  const filtro = competicao || document.getElementById('filtroCompeticao').value;
+  if (!filtro) {
+    alert('Selecione uma competição antes de editar o placar.');
+    return;
+  }
 
-  const modal = new bootstrap.Modal(document.getElementById('modalEditarPlacar'));
-  modal.show();
+  fetch(`${API_URL}?competicao=${encodeURIComponent(filtro)}`)
+    .then(res => res.json())
+    .then(jogos => {
+      const jogo = jogos.find(j => j.id === id);
+      if (!jogo) {
+        alert('Jogo não encontrado.');
+        return;
+      }
+
+      document.getElementById('inputIdJogo').value = id;
+      document.getElementById('inputCompeticao').value = filtro;
+      document.getElementById('inputGolsFla').value = jogo.gols_flamengo ?? '';
+      document.getElementById('inputGolsAdv').value = jogo.gols_adversario ?? '';
+
+      const modal = new bootstrap.Modal(document.getElementById('modalEditarPlacar'));
+      modal.show();
+    });
 }
 
 // 💾 Função para salvar o placar
