@@ -23,6 +23,7 @@
       <button class="btn btn-danger" onclick="carregarJogos()">Buscar</button>
     </div>
 
+    <!-- 🔥 Tabela de Jogos -->
     <div class="table-responsive mt-4">
       <table class="table table-bordered table-hover align-middle">
         <thead class="table-danger text-center">
@@ -42,6 +43,33 @@
       </table>
     </div>
 
+    <!-- 🔥 Tabela de Classificação -->
+    <div class="card mt-5">
+      <div class="card-header bg-danger text-white">
+        <h5 class="mb-0">🏆 Classificação - Brasileirão 2025</h5>
+      </div>
+      <div class="card-body table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+          <thead class="table-danger text-center">
+            <tr>
+              <th>Pos</th>
+              <th>Time</th>
+              <th>P</th>
+              <th>J</th>
+              <th>V</th>
+              <th>E</th>
+              <th>D</th>
+              <th>GP</th>
+              <th>GC</th>
+              <th>SG</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaClassificacao"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ➕ Formulário de Novo Jogo -->
     <div class="card mt-5">
       <div class="card-header bg-danger text-white">
         <h5 class="mb-0">➕ Adicionar novo jogo</h5>
@@ -83,21 +111,21 @@
   </div>
 
   <!-- 🔥 Modal para editar placar -->
-  <div class="modal fade" id="modalEditarPlacar" tabindex="-1" aria-labelledby="modalEditarPlacarLabel" aria-hidden="true">
+  <div class="modal fade" id="modalEditarPlacar" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header bg-danger text-white">
-          <h5 class="modal-title" id="modalEditarPlacarLabel">Editar Placar</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          <h5 class="modal-title">Editar Placar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <form id="formEditarPlacar">
             <div class="mb-3">
-              <label for="inputGolsFla" class="form-label">Gols do Flamengo</label>
+              <label class="form-label">Gols do Flamengo</label>
               <input type="number" class="form-control" id="inputGolsFla" required>
             </div>
             <div class="mb-3">
-              <label for="inputGolsAdv" class="form-label">Gols do Adversário</label>
+              <label class="form-label">Gols do Adversário</label>
               <input type="number" class="form-control" id="inputGolsAdv" required>
             </div>
             <input type="hidden" id="inputIdJogo">
@@ -105,8 +133,8 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-danger" onclick="salvarPlacar()">Salvar</button>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-danger" onclick="salvarPlacar()">Salvar</button>
         </div>
       </div>
     </div>

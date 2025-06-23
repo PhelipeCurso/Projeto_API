@@ -35,6 +35,44 @@ function carregarJogos() {
       });
     });
 }
+function carregarClassificacao() {
+  const url = 'https://projetoapi-production-a6f9.up.railway.app/classificacao?competicao=brasileirao';
+
+  fetch(url)
+    .then(res => res.json())
+    .then(classificacao => {
+      const tbody = document.getElementById('tabelaClassificacao');
+      tbody.innerHTML = '';
+
+      classificacao.forEach(time => {
+        const linha = document.createElement('tr');
+        linha.innerHTML = `
+          <td class="text-center">${time.posicao}</td>
+          <td>
+            <img src="${time.escudo}" alt="${time.time}" width="25" class="me-2">
+            ${time.time}
+          </td>
+          <td class="text-center">${time.pontos}</td>
+          <td class="text-center">${time.jogos}</td>
+          <td class="text-center">${time.vitorias}</td>
+          <td class="text-center">${time.empates}</td>
+          <td class="text-center">${time.derrotas}</td>
+          <td class="text-center">${time.golsPro}</td>
+          <td class="text-center">${time.golsContra}</td>
+          <td class="text-center">${time.saldoGols}</td>
+        `;
+        tbody.appendChild(linha);
+      });
+    })
+    .catch(err => {
+      console.error('Erro ao carregar a classificação:', err);
+    });
+}
+
+// Carregar os jogos e a classificação ao abrir a página
+carregarJogos();
+carregarClassificacao();
+
 
 // 🔥 Função para abrir o modal e preencher dados
 function editarPlacar(id, competicao) {
