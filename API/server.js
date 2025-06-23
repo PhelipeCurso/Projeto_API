@@ -104,7 +104,7 @@ app.post('/jogos', [
     novoJogo.id = jogos.length > 0 ? jogos[jogos.length - 1].id + 1 : 1;
 
     // Adiciona dinamicamente as URLs dos escudos
-    novoJogo.escudo_time = gerarUrlEscudo('Flamengo');
+    novoJogo.escudo_time = gerarUrlEscudo('fla');
     novoJogo.escudo_adversario = gerarUrlEscudo(novoJogo.adversario);
 
     jogos.push(novoJogo);
