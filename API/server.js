@@ -153,6 +153,99 @@ app.patch('/jogos/:id', (req, res) => {
   });
 });
 
+// 🏆 Rota para classificação do Brasileirão
+app.get('/classificacao', (req, res) => {
+  const { competicao } = req.query;
+
+  if (!competicao) {
+    return res.status(400).json({ erro: 'Informe a competição como parâmetro: ?competicao=brasileirao' });
+  }
+
+  const nomeArquivo = arquivosPorCompeticao[competicao.toLowerCase()];
+  if (!nomeArquivo) {
+    return res.status(400).json({ erro: 'Competição inválida' });
+  }
+
+  const caminho = path.join(__dirname, 'dados', nomeArquivo);
+
+  fs.readFile(caminho, 'utf8', (err, data) => {
+    if (err) {
+      return res.status(500).json({ erro: 'Erro ao ler os dados dos jogos' });
+    }
+
+    const jogos = JSON.parse(data).filter(j => j.concluido);
+
+    const tabela = {};
+
+    jogos.forEach(jogo => {
+      const timeFla = 'Flamengo';
+      const timeAdv = jogo.adversario;
+      const golsFla = jogo.gols_flamengo;
+      const golsAdv = jogo.gols_adversario;
+
+      // Inicializa os times na tabela se ainda não existirem
+      [timeFla, timeAdv].forEach(time => {
+        if (!tabela[time]) {
+          tabela[time] = {
+            time,
+            pontos: 0,
+            jogos: 0,
+            vitorias: 0,
+            empates: 0,
+            derrotas: 0,
+            golsPro: 0,
+            golsContra: 0,
+            saldoGols: 0,
+            escudo: gerarUrlEscudo(time)
+          };
+        }
+      });
+
+      // Atualiza estatísticas para Flamengo
+      tabela[timeFla].jogos += 1;
+      tabela[timeFla].golsPro += golsFla;
+      tabela[timeFla].golsContra += golsAdv;
+      tabela[timeFla].saldoGols = tabela[timeFla].golsPro - tabela[timeFla].golsContra;
+
+      // Atualiza estatísticas para Adversário
+      tabela[timeAdv].jogos += 1;
+      tabela[timeAdv].golsPro += golsAdv;
+      tabela[timeAdv].golsContra += golsFla;
+      tabela[timeAdv].saldoGols = tabela[timeAdv].golsPro - tabela[timeAdv].golsContra;
+
+      // Resultado da partida
+      if (golsFla > golsAdv) {
+        // Vitória do Flamengo
+        tabela[timeFla].vitorias += 1;
+        tabela[timeFla].pontos += 3;
+        tabela[timeAdv].derrotas += 1;
+      } else if (golsFla < golsAdv) {
+        // Vitória do adversário
+        tabela[timeAdv].vitorias += 1;
+        tabela[timeAdv].pontos += 3;
+        tabela[timeFla].derrotas += 1;
+      } else {
+        // Empate
+        tabela[timeFla].empates += 1;
+        tabela[timeFla].pontos += 1;
+        tabela[timeAdv].empates += 1;
+        tabela[timeAdv].pontos += 1;
+      }
+    });
+
+    // Organiza a classificação
+    const classificacao = Object.values(tabela).sort((a, b) => {
+      if (b.pontos !== a.pontos) return b.pontos - a.pontos;
+      if (b.saldoGols !== a.saldoGols) return b.saldoGols - a.saldoGols;
+      return b.golsPro - a.golsPro;
+    }).map((item, index) => ({
+      posicao: index + 1,
+      ...item
+    }));
+
+    res.json(classificacao);
+  });
+});
 
 // 🚀 Iniciar servidor
 app.listen(PORT, () => {
