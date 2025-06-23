@@ -59,8 +59,8 @@ app.get('/jogos', (req, res) => {
     // Adiciona os escudos dinamicamente
     jogos = jogos.map(jogo => ({
       ...jogo,
-      escudo_time: gerarUrlEscudo('fla'),
-      escudo_adversario: gerarUrlEscudo(jogo.adversario)
+     escudo_time_casa: gerarUrlEscudo(jogo.time_casa),
+     escudo_time_fora: gerarUrlEscudo(jogo.time_fora)
     }));
 
     res.json(jogos);
@@ -72,7 +72,8 @@ app.post('/jogos', [
   body('data').notEmpty(),
   body('hora').notEmpty(),
   body('local').notEmpty(),
-  body('adversario').notEmpty(),
+  body('time_casa').notEmpty(),
+  body('time_fora').notEmpty(),
   body('competicao').notEmpty(),
   body('concluido').isBoolean(),
   body('etapa').notEmpty()
@@ -82,7 +83,10 @@ app.post('/jogos', [
     return res.status(400).json({ erros: erros.array() });
   }
 
-  const novoJogo = req.body;
+  const novoJogo = {
+  ...req.body,
+  id: jogos.length > 0 ? jogos[jogos.length - 1].id + 1 : 1
+};
   const nomeArquivo = arquivosPorCompeticao[novoJogo.competicao.toLowerCase()];
 
   if (!nomeArquivo) {
@@ -178,10 +182,7 @@ app.get('/classificacao', (req, res) => {
     const tabela = {};
 
     jogos.forEach(jogo => {
-      const timeFla = 'Flamengo';
-      const timeAdv = jogo.adversario;
-      const golsFla = jogo.gols_flamengo;
-      const golsAdv = jogo.gols_adversario;
+      const { time_casa, time_fora, gols_time_casa, gols_time_fora } = jogo;
 
       // Inicializa os times na tabela se ainda não existirem
       [timeFla, timeAdv].forEach(time => {
@@ -201,36 +202,32 @@ app.get('/classificacao', (req, res) => {
         }
       });
 
-      // Atualiza estatísticas para Flamengo
-      tabela[timeFla].jogos += 1;
-      tabela[timeFla].golsPro += golsFla;
-      tabela[timeFla].golsContra += golsAdv;
-      tabela[timeFla].saldoGols = tabela[timeFla].golsPro - tabela[timeFla].golsContra;
+     
+// Atualiza time casa
+tabela[time_casa].jogos += 1;
+tabela[time_casa].golsPro += gols_time_casa;
+tabela[time_casa].golsContra += gols_time_fora;
 
-      // Atualiza estatísticas para Adversário
-      tabela[timeAdv].jogos += 1;
-      tabela[timeAdv].golsPro += golsAdv;
-      tabela[timeAdv].golsContra += golsFla;
-      tabela[timeAdv].saldoGols = tabela[timeAdv].golsPro - tabela[timeAdv].golsContra;
+// Atualiza time fora
+tabela[time_fora].jogos += 1;
+tabela[time_fora].golsPro += gols_time_fora;
+tabela[time_fora].golsContra += gols_time_casa;
 
-      // Resultado da partida
-      if (golsFla > golsAdv) {
-        // Vitória do Flamengo
-        tabela[timeFla].vitorias += 1;
-        tabela[timeFla].pontos += 3;
-        tabela[timeAdv].derrotas += 1;
-      } else if (golsFla < golsAdv) {
-        // Vitória do adversário
-        tabela[timeAdv].vitorias += 1;
-        tabela[timeAdv].pontos += 3;
-        tabela[timeFla].derrotas += 1;
-      } else {
-        // Empate
-        tabela[timeFla].empates += 1;
-        tabela[timeFla].pontos += 1;
-        tabela[timeAdv].empates += 1;
-        tabela[timeAdv].pontos += 1;
-      }
+// Vitórias, empates, derrotas
+if (gols_time_casa > gols_time_fora) {
+  tabela[time_casa].vitorias += 1;
+  tabela[time_casa].pontos += 3;
+  tabela[time_fora].derrotas += 1;
+} else if (gols_time_casa < gols_time_fora) {
+  tabela[time_fora].vitorias += 1;
+  tabela[time_fora].pontos += 3;
+  tabela[time_casa].derrotas += 1;
+} else {
+  tabela[time_casa].empates += 1;
+  tabela[time_fora].empates += 1;
+  tabela[time_casa].pontos += 1;
+  tabela[time_fora].pontos += 1;
+}
     });
 
     // Organiza a classificação
