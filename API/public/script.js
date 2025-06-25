@@ -7,7 +7,6 @@ function carregarJogos() {
   fetch(url)
     .then(res => res.json())
     .then(jogos => {
-      console.log('Resposta da API:', jogos); 
       const tbody = document.querySelector('#tabelaJogos');
       tbody.innerHTML = '';
 
@@ -17,26 +16,32 @@ function carregarJogos() {
       }
 
       jogos.forEach(jogo => {
+        const placar = jogo.concluido
+          ? `<strong>${jogo.gols_time_casa} x ${jogo.gols_time_fora}</strong>`
+          : 'A disputar';
+
         const linha = document.createElement('tr');
         linha.innerHTML = `
           <td>${jogo.id}</td>
           <td>${jogo.data}</td>
           <td>${jogo.hora}</td>
           <td>${jogo.local}</td>
-          <td>${jogo.rodada}</td>
-          <td>${jogo.Mandante}</td>
-          <td>${jogo.visitante}</td>
+          <td>${jogo.rodada ?? '-'}</td>
+          <td>${jogo.time_casa}</td>
+          <td>${jogo.time_fora}</td>
           <td>${jogo.competicao}</td>
-          <td>${jogo.concluido ? `<strong>${jogo.gols_flamengo} x ${jogo.gols_adversario}</strong>` : 'A disputar'}</td>
-          <td>${jogo.etapa}</td>
+          <td>${placar}</td>
+          <td>${jogo.etapa ?? '-'}</td>
           <td class="d-flex gap-2 justify-content-center">
             <button class="btn btn-sm btn-warning" onclick="editarPlacar(${jogo.id}, '${jogo.competicao}')">Editar</button>
           </td>
         `;
         tbody.appendChild(linha);
       });
-    });
+    })
+    .catch(err => console.error('Erro ao carregar os jogos:', err));
 }
+
 function carregarClassificacao() {
   const url = 'https://projetoapi-production-a6f9.up.railway.app/classificacao?competicao=brasileirao';
 
@@ -50,10 +55,7 @@ function carregarClassificacao() {
         const linha = document.createElement('tr');
         linha.innerHTML = `
           <td class="text-center">${time.posicao}</td>
-          <td>
-            <img src="${time.escudo}" alt="${time.time}" width="25" class="me-2">
-            ${time.time}
-          </td>
+          <td><img src="${time.escudo}" alt="${time.time}" width="25" class="me-2">${time.time}</td>
           <td class="text-center">${time.pontos}</td>
           <td class="text-center">${time.jogos}</td>
           <td class="text-center">${time.vitorias}</td>
@@ -75,7 +77,6 @@ function carregarClassificacao() {
 carregarJogos();
 carregarClassificacao();
 
-
 // 🔥 Função para abrir o modal e preencher dados
 function editarPlacar(id, competicao) {
   const filtro = competicao || document.getElementById('filtroCompeticao').value;
@@ -95,8 +96,8 @@ function editarPlacar(id, competicao) {
 
       document.getElementById('inputIdJogo').value = id;
       document.getElementById('inputCompeticao').value = filtro;
-      document.getElementById('inputGolsFla').value = jogo.gols_flamengo ?? '';
-      document.getElementById('inputGolsAdv').value = jogo.gols_adversario ?? '';
+      document.getElementById('inputGolsFla').value = jogo.gols_time_casa ?? '';
+      document.getElementById('inputGolsAdv').value = jogo.gols_time_fora ?? '';
 
       const modal = new bootstrap.Modal(document.getElementById('modalEditarPlacar'));
       modal.show();
@@ -116,8 +117,8 @@ function salvarPlacar() {
   }
 
   const dados = {
-    gols_flamengo: golsFla,
-    gols_adversario: golsAdv,
+    gols_time_casa: golsFla,
+    gols_time_fora: golsAdv,
     concluido: true
   };
 
@@ -136,6 +137,7 @@ function salvarPlacar() {
     });
 }
 
+// ➕ Submissão do novo jogo
 document.getElementById('formNovoJogo').addEventListener('submit', e => {
   e.preventDefault();
 
@@ -146,10 +148,10 @@ document.getElementById('formNovoJogo').addEventListener('submit', e => {
     rodada: parseInt(document.getElementById('rodada').value),
     time_casa: document.getElementById('mandante').value,
     time_fora: document.getElementById('visitante').value,
-    competicao: document.getElementById('competicao').value,
-    concluido: false,
     gols_time_casa: parseInt(document.getElementById('golsMandante').value) || 0,
     gols_time_fora: parseInt(document.getElementById('golsVisitante').value) || 0,
+    concluido: document.getElementById('concluido').checked,
+    competicao: document.getElementById('competicao').value,
     etapa: "fase de grupos"
   };
 
@@ -160,10 +162,12 @@ document.getElementById('formNovoJogo').addEventListener('submit', e => {
   })
     .then(res => res.json())
     .then(() => {
-      alert('Jogo adicionado!');
+      alert('Jogo adicionado com sucesso!');
       carregarJogos();
       e.target.reset();
+    })
+    .catch(err => {
+      console.error('Erro ao salvar o novo jogo:', err);
+      alert('Erro ao salvar o jogo.');
     });
 });
-
-carregarJogos();
