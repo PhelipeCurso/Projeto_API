@@ -141,11 +141,13 @@ document.getElementById('formNovoJogo').addEventListener('submit', e => {
     data: document.getElementById('data').value,
     hora: document.getElementById('hora').value,
     local: document.getElementById('local').value,
-    adversario: document.getElementById('adversario').value,
+    rodada: parseInt(document.getElementById('rodada').value),
+    time_casa: document.getElementById('mandante').value,
+    time_fora: document.getElementById('visitante').value,
     competicao: document.getElementById('competicao').value,
     concluido: false,
-    gols_flamengo: null,
-    gols_adversario: null,
+    gols_time_casa: parseInt(document.getElementById('golsMandante').value) || 0,
+    gols_time_fora: parseInt(document.getElementById('golsVisitante').value) || 0,
     etapa: "fase de grupos"
   };
 

@@ -72,10 +72,13 @@ app.post('/jogos', [
   body('data').notEmpty(),
   body('hora').notEmpty(),
   body('local').notEmpty(),
+  body('rodada').isInt(),
   body('time_casa').notEmpty(),
   body('time_fora').notEmpty(),
   body('competicao').notEmpty(),
   body('concluido').isBoolean(),
+  body('gols_time_casa').isInt(),
+  body('gols_time_fora').isInt(),  
   body('etapa').notEmpty()
 ], (req, res) => {
   const erros = validationResult(req);
