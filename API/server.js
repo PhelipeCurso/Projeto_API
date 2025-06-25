@@ -42,7 +42,10 @@ app.get('/jogos', (req, res) => {
     return res.status(400).json({ erro: 'Informe a competição como parâmetro: ?competicao=brasileirao' });
   }
 
-  const nomeArquivo = arquivosPorCompeticao[competicao.toLowerCase()];
+  const nomeArquivo = arquivosPorCompeticao[
+  competicao.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+];
+
   if (!nomeArquivo) {
     return res.status(400).json({ erro: 'Competição inválida' });
   }
@@ -130,7 +133,10 @@ app.patch('/jogos/:id', (req, res) => {
   const { id } = req.params;
   const { competicao } = req.query;
 
-  const nomeArquivo = arquivosPorCompeticao[competicao.toLowerCase()];
+  const nomeArquivo = arquivosPorCompeticao[
+  competicao.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+];
+
   if (!nomeArquivo) {
     return res.status(400).json({ erro: 'Competição inválida' });
   }
@@ -166,7 +172,10 @@ app.get('/classificacao', (req, res) => {
     return res.status(400).json({ erro: 'Informe a competição como parâmetro: ?competicao=brasileirao' });
   }
 
-  const nomeArquivo = arquivosPorCompeticao[competicao.toLowerCase()];
+  const nomeArquivo = arquivosPorCompeticao[
+  competicao.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+];
+
   if (!nomeArquivo) {
     return res.status(400).json({ erro: 'Competição inválida' });
   }
