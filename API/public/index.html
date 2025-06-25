@@ -110,35 +110,69 @@
     </div>
   </div>
 
-  <!-- 🔥 Modal para editar placar -->
-  <div class="modal fade" id="modalEditarPlacar" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-danger text-white">
-          <h5 class="modal-title">Editar Placar</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <form id="formEditarPlacar">
-            <div class="mb-3">
-              <label class="form-label">Gols do Mandante</label>
-              <input type="number" class="form-control" id="inputGolsFla" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Gols do visitante</label>
-              <input type="number" class="form-control" id="inputGolsAdv" required>
-            </div>
-            <input type="hidden" id="inputIdJogo">
-            <input type="hidden" id="inputCompeticao">
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button class="btn btn-danger" onclick="salvarPlacar()">Salvar</button>
-        </div>
+ <!-- 🔥 Modal para editar jogo -->
+<div class="modal fade" id="modalEditarPlacar" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title">Editar Jogo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formEditarPlacar">
+          <div class="mb-2">
+            <label class="form-label">Data</label>
+            <input type="date" class="form-control" id="inputData" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Hora</label>
+            <input type="time" class="form-control" id="inputHora" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Local</label>
+            <input type="text" class="form-control" id="inputLocal" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Rodada</label>
+            <input type="number" class="form-control" id="inputRodada">
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Mandante</label>
+            <input type="text" class="form-control" id="inputTimeCasa" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Visitante</label>
+            <input type="text" class="form-control" id="inputTimeFora" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Gols do Mandante</label>
+            <input type="number" class="form-control" id="inputGolsFla" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Gols do Visitante</label>
+            <input type="number" class="form-control" id="inputGolsAdv" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Etapa</label>
+            <input type="text" class="form-control" id="inputEtapa">
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="inputConcluido">
+            <label class="form-check-label" for="inputConcluido">Jogo Concluído</label>
+          </div>
+
+          <!-- Hidden fields -->
+          <input type="hidden" id="inputIdJogo">
+          <input type="hidden" id="inputCompeticao">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-danger" onclick="salvarPlacar()">Salvar</button>
       </div>
     </div>
   </div>
+</div>
 
   <!-- Scripts -->
   <script src="script.js"></script>

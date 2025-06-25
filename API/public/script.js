@@ -96,8 +96,17 @@ function editarPlacar(id, competicao) {
 
       document.getElementById('inputIdJogo').value = id;
       document.getElementById('inputCompeticao').value = filtro;
+      document.getElementById('inputData').value = jogo.data ?? '';
+      document.getElementById('inputHora').value = jogo.hora ?? '';
+      document.getElementById('inputLocal').value = jogo.local ?? '';
+      document.getElementById('inputRodada').value = jogo.rodada ?? '';
+      document.getElementById('inputTimeCasa').value = jogo.time_casa ?? '';
+      document.getElementById('inputTimeFora').value = jogo.time_fora ?? '';
       document.getElementById('inputGolsFla').value = jogo.gols_time_casa ?? '';
       document.getElementById('inputGolsAdv').value = jogo.gols_time_fora ?? '';
+      document.getElementById('inputEtapa').value = jogo.etapa ?? '';
+      document.getElementById('inputConcluido').checked = jogo.concluido ?? false;
+
 
       const modal = new bootstrap.Modal(document.getElementById('modalEditarPlacar'));
       modal.show();
@@ -108,18 +117,18 @@ function editarPlacar(id, competicao) {
 function salvarPlacar() {
   const id = document.getElementById('inputIdJogo').value;
   const competicao = document.getElementById('inputCompeticao').value;
-  const golsFla = parseInt(document.getElementById('inputGolsFla').value);
-  const golsAdv = parseInt(document.getElementById('inputGolsAdv').value);
-
-  if (isNaN(golsFla) || isNaN(golsAdv)) {
-    alert('Por favor, insira valores válidos para os gols.');
-    return;
-  }
 
   const dados = {
-    gols_time_casa: golsFla,
-    gols_time_fora: golsAdv,
-    concluido: true
+    data: document.getElementById('inputData').value,
+    hora: document.getElementById('inputHora').value,
+    local: document.getElementById('inputLocal').value,
+    rodada: parseInt(document.getElementById('inputRodada').value),
+    time_casa: document.getElementById('inputTimeCasa').value,
+    time_fora: document.getElementById('inputTimeFora').value,
+    gols_time_casa: parseInt(document.getElementById('inputGolsFla').value),
+    gols_time_fora: parseInt(document.getElementById('inputGolsAdv').value),
+    etapa: document.getElementById('inputEtapa').value,
+    concluido: document.getElementById('inputConcluido').checked
   };
 
   fetch(`${API_URL}/${id}?competicao=${encodeURIComponent(competicao)}`, {
@@ -129,13 +138,18 @@ function salvarPlacar() {
   })
     .then(res => res.json())
     .then(() => {
-      alert('Placar atualizado!');
+      alert('Jogo atualizado com sucesso!');
       const modalElement = document.getElementById('modalEditarPlacar');
       const modal = bootstrap.Modal.getInstance(modalElement);
       modal.hide();
       carregarJogos();
+    })
+    .catch(err => {
+      console.error('Erro ao atualizar o jogo:', err);
+      alert('Erro ao salvar as alterações.');
     });
 }
+
 
 // ➕ Submissão do novo jogo
 document.getElementById('formNovoJogo').addEventListener('submit', e => {
