@@ -131,23 +131,23 @@ function salvarPlacar() {
     concluido: document.getElementById('inputConcluido').checked
   };
 
-  fetch(`${API_URL}/${id}?competicao=${encodeURIComponent(competicao)}`, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(dados)
-  })
-    .then(res => res.json())
-    .then(() => {
-      alert('Jogo atualizado com sucesso!');
-      const modalElement = document.getElementById('modalEditarPlacar');
-      const modal = bootstrap.Modal.getInstance(modalElement);
-      modal.hide();
-      carregarJogos();
-    })
-    .catch(err => {
-      console.error('Erro ao atualizar o jogo:', err);
-      alert('Erro ao salvar as alterações.');
-    });
+  fetch(`${API_URL}?competicao=${encodeURIComponent(filtro)}`)
+  .then(res => res.json())
+  .then(jogos => {
+    if (!Array.isArray(jogos)) {
+      console.error('Resposta inválida da API:', jogos);
+      alert('Erro ao carregar jogo. Verifique a competição selecionada.');
+      return;
+    }
+
+    const jogo = jogos.find(j => j.id === id);
+    if (!jogo) {
+      alert('Jogo não encontrado.');
+      return;
+    }
+
+    // preencher os campos normalmente...
+  });
 }
 
 
