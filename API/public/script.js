@@ -23,7 +23,9 @@ function carregarJogos() {
           <td>${jogo.data}</td>
           <td>${jogo.hora}</td>
           <td>${jogo.local}</td>
-          <td>${jogo.adversario}</td>
+          <td>${jogo.rodada}</td>
+          <td>${jogo.Mandante}</td>
+          <td>${jogo.visitante}</td>
           <td>${jogo.competicao}</td>
           <td>${jogo.concluido ? `<strong>${jogo.gols_flamengo} x ${jogo.gols_adversario}</strong>` : 'A disputar'}</td>
           <td>${jogo.etapa}</td>
