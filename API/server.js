@@ -68,6 +68,7 @@ app.get('/jogos', (req, res) => {
 });
 
 // 📝 Rota para adicionar novo jogo
+// 📝 Rota para adicionar novo jogo (ajustada)
 app.post('/jogos', [
   body('data').notEmpty(),
   body('hora').notEmpty(),
@@ -78,7 +79,7 @@ app.post('/jogos', [
   body('competicao').notEmpty(),
   body('concluido').isBoolean(),
   body('gols_time_casa').isInt(),
-  body('gols_time_fora').isInt(),  
+  body('gols_time_fora').isInt(),
   body('etapa').notEmpty()
 ], (req, res) => {
   const erros = validationResult(req);
@@ -86,12 +87,9 @@ app.post('/jogos', [
     return res.status(400).json({ erros: erros.array() });
   }
 
-  const novoJogo = {
-  ...req.body,
-  id: jogos.length > 0 ? jogos[jogos.length - 1].id + 1 : 1
-};
-  const nomeArquivo = arquivosPorCompeticao[novoJogo.competicao.toLowerCase()];
+  const novoJogo = req.body;
 
+  const nomeArquivo = arquivosPorCompeticao[novoJogo.competicao.toLowerCase()];
   if (!nomeArquivo) {
     return res.status(400).json({ erro: 'Competição inválida' });
   }
@@ -110,9 +108,8 @@ app.post('/jogos', [
 
     novoJogo.id = jogos.length > 0 ? jogos[jogos.length - 1].id + 1 : 1;
 
-    // Adiciona dinamicamente as URLs dos escudos
-    novoJogo.escudo_time = gerarUrlEscudo('fla');
-    novoJogo.escudo_adversario = gerarUrlEscudo(novoJogo.adversario);
+    novoJogo.escudo_time_casa = gerarUrlEscudo(novoJogo.time_casa);
+    novoJogo.escudo_time_fora = gerarUrlEscudo(novoJogo.time_fora);
 
     jogos.push(novoJogo);
 
@@ -126,6 +123,7 @@ app.post('/jogos', [
     });
   });
 });
+
 
 // 🔥 Atualizar placar
 app.patch('/jogos/:id', (req, res) => {
