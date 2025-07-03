@@ -162,22 +162,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/ceara.png"
     },
-    {
-        "id": 2,
-        "rodada": 2,
-        "data": "2025-04-06",
-        "hora": "18:30",
-        "local": "Barradão",
-        "time_casa": "Flamengo",
-        "time_fora": "Vitória",
-        "gols_time_casa": 2,
-        "gols_time_fora": 1,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/vitoria.png"
-    },
+    
     {
         "id": 49,
         "rodada": 2,
@@ -338,22 +323,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/santos.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png"
     },
-    {
-        "id": 3,
-        "rodada": 3,
-        "data": "2025-04-13",
-        "hora": "17:30",
-        "local": "Arena do Grêmio",
-        "time_casa": "Flamengo",
-        "time_fora": "Grêmio",
-        "gols_time_casa": 2,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/gremio.png"
-    },
+    
     {
         "id": 59,
         "rodada": 3,
@@ -514,22 +484,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/mirassol.png"
     },
-    {
-        "id": 4,
-        "rodada": 4,
-        "data": "2025-04-16",
-        "hora": "21:30",
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "Juventude",
-        "gols_time_casa": 6,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/juventude.png"
-    },
+    
     {
         "id": 69,
         "rodada": 4,
@@ -690,22 +645,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/fluminense.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/corinthians.png"
     },
-    {
-        "id": 5,
-        "rodada": 5,
-        "data": "2025-04-19",
-        "hora": "18:30",
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "Vasco da Gama",
-        "gols_time_casa": 0,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/vascodagama.png"
-    },
+    
     {
         "id": 79,
         "rodada": 5,
@@ -866,22 +806,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogo.png"
     },
-    {
-        "id": 6,
-        "rodada": 6,
-        "data": "2025-04-27",
-        "hora": "16:00",
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "Corinthians",
-        "gols_time_casa": 4,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/corinthians.png"
-    },
+    
     {
         "id": 89,
         "rodada": 6,
@@ -1042,22 +967,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/santos.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png"
     },
-    {
-        "id": 7,
-        "rodada": 7,
-        "data": "2025-05-04",
-        "hora": "18:30",
-        "local": "Mineirão",
-        "time_casa": "Flamengo",
-        "time_fora": "Cruzeiro",
-        "gols_time_casa": 1,
-        "gols_time_fora": 2,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/cruzeiro.png"
-    },
+    
     {
         "id": 99,
         "rodada": 7,
@@ -1218,22 +1128,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/juventude.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/atletico-mg.png"
     },
-    {
-        "id": 8,
-        "rodada": 8,
-        "data": "2025-05-10",
-        "hora": "21:00",
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "Bahia",
-        "gols_time_casa": 1,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png"
-    },
+    
     {
         "id": 109,
         "rodada": 8,
@@ -1394,22 +1289,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/santos.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/ceara.png"
     },
-    {
-        "id": 9,
-        "rodada": 9,
-        "data": "2025-05-18",
-        "hora": "18:30",
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "Botafogo",
-        "gols_time_casa": 0,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogo.png"
-    },
+    
     {
         "id": 119,
         "rodada": 9,
@@ -1554,22 +1434,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/palmeiras.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png"
     },
-    {
-        "id": 10,
-        "rodada": 10,
-        "data": "2025-05-25",
-        "hora": "16:00",
-        "local": "Allianz Parque",
-        "time_casa": "Flamengo",
-        "time_fora": "Palmeiras",
-        "gols_time_casa": 2,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/palmeiras.png"
-    },
+    
     {
         "id": 128,
         "rodada": 10,
@@ -1730,22 +1595,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/palmeiras.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png"
     },
-    {
-        "id": 11,
-        "rodada": 11,
-        "data": "2025-06-01",
-        "hora": "18:30",
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "Fortaleza",
-        "gols_time_casa": 5,
-        "gols_time_fora": 0,
-        "concluido": true,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/forta.png"
-    },
+    
     {
         "id": 138,
         "rodada": 11,
@@ -1906,22 +1756,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/fortaleza.png"
     },
-    {
-        "id": 12,
-        "rodada": 12,
-        "data": "2025-06-08",
-        "hora": "16:00",
-        "local": "Ilha do Retiro",
-        "time_casa": "Flamengo",
-        "time_fora": "Sport",
-        "gols_time_casa": 0,
-        "gols_time_fora": 0,
-        "concluido": false,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/sport.png"
-    },
+    
     {
         "id": 148,
         "rodada": 12,
@@ -2082,22 +1917,7 @@
         "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/sport.png",
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png"
     },
-    {
-        "id": 13,
-        "rodada": 13,
-        "data": "2025-07-13",
-        "hora": null,
-        "local": "Maracanã",
-        "time_casa": "Flamengo",
-        "time_fora": "São Paulo",
-        "gols_time_casa": 0,
-        "gols_time_fora": 0,
-        "concluido": false,
-        "competicao": "Brasileirão",
-        "etapa": "primeiro turno",
-        "escudo_time": "https://projetoapi-production-a6f9.up.railway.app/escudos/fla.png",
-        "escudo_adversario": "https://projetoapi-production-a6f9.up.railway.app/escudos/sao_paulo.png"
-    },
+    
     {
         "id": 158,
         "rodada": 13,
