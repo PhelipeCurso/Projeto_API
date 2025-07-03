@@ -195,10 +195,11 @@ app.get('/classificacao', (req, res) => {
       const { time_casa, time_fora, gols_time_casa, gols_time_fora } = jogo;
 
       // Inicializa os times na tabela se ainda não existirem
-      [timeFla, timeAdv].forEach(time => {
+       [time_casa, time_fora].forEach(time => {
         if (!tabela[time]) {
           tabela[time] = {
             time,
+            escudo: gerarUrlEscudo(time),
             pontos: 0,
             jogos: 0,
             vitorias: 0,
@@ -206,8 +207,7 @@ app.get('/classificacao', (req, res) => {
             derrotas: 0,
             golsPro: 0,
             golsContra: 0,
-            saldoGols: 0,
-            escudo: gerarUrlEscudo(time)
+            saldoGols: 0
           };
         }
       });
