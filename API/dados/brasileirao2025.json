@@ -1785,7 +1785,23 @@
   
     },
     {
-        "id": 149,
+    "id": 149,
+    "rodada": 12,
+    "data": "2025-06-12",
+    "hora": "19:00",
+    "local": "Nabi Abi Chedid",
+    "time_casa": "Red Bull Bragantino",
+    "time_fora": "Bahia",
+    "gols_time_casa": 0,
+    "gols_time_fora": 3,
+    "concluido": true,
+    "competicao": "Brasileirão",
+    "etapa": "primeiro turno",
+    "escudo_time_casa": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png",
+    "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/bahia.png"
+  },
+    {
+        "id": 150,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "19:00",
@@ -1801,7 +1817,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/cruzeiro.png"
     },
     {
-        "id": 150,
+        "id": 151,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "19:30",
@@ -1817,7 +1833,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/santos.png"
     },
     {
-        "id": 151,
+        "id": 152,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "20:00",
@@ -1833,7 +1849,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/corinthians.png"
     },
     {
-        "id": 152,
+        "id": 153,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "21:30",
@@ -1849,7 +1865,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/internacional.png"
     },
     {
-        "id": 153,
+        "id": 154,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "21:30",
@@ -1865,7 +1881,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/vasco.png"
     },
     {
-        "id": 154,
+        "id": 155,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "20:00",
@@ -1881,7 +1897,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/mirassol.png"
     },
     {
-        "id": 155,
+        "id": 156,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "N/A",
@@ -1897,7 +1913,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/ceara.png"
     },
     {
-        "id": 156,
+        "id": 157,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "N/A",
@@ -1913,7 +1929,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/juventude.png"
     },
     {
-        "id": 157,
+        "id": 158,
         "rodada": 12,
         "data": "2025-06-12",
         "hora": "N/A",
@@ -1930,7 +1946,7 @@
     },
     
     {
-        "id": 158,
+        "id": 159,
         "rodada": 13,
         "data": "2025-07-12",
         "hora": "16:30",
@@ -1946,7 +1962,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/vitoria.png"
     },
     {
-        "id": 159,
+        "id": 160,
         "rodada": 13,
         "data": "2025-07-12",
         "hora": "21:00",
@@ -1962,7 +1978,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/atletico-mg.png"
     },
     {
-        "id": 160,
+        "id": 161,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "16:00",
@@ -1978,7 +1994,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/sao_paulo.png"
     },
     {
-        "id": 161,
+        "id": 162,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "16:00",
@@ -1994,7 +2010,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/botafogo.png"
     },
     {
-        "id": 162,
+        "id": 163,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "16:00",
@@ -2010,7 +2026,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/palmeiras.png"
     },
     {
-        "id": 163,
+        "id": 164,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "16:00",
@@ -2026,7 +2042,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/fluminense.png"
     },
     {
-        "id": 164,
+        "id": 165,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "19:00",
@@ -2042,7 +2058,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/bragantino.png"
     },
     {
-        "id": 165,
+        "id": 166,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "20:30",
@@ -2058,7 +2074,7 @@
         "escudo_time_fora": "https://projetoapi-production-a6f9.up.railway.app/escudos/gremio.png"
     },
     {
-        "id": 166,
+        "id": 167,
         "rodada": 13,
         "data": "2025-07-13",
         "hora": "20:30",
