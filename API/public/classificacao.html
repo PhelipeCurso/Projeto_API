@@ -30,6 +30,7 @@
           <th>GP</th>
           <th>GC</th>
           <th>SG</th>
+          <th>Últimos 5</th>
         </tr>
       </thead>
       <tbody id="tabelaClassificacao">
@@ -73,6 +74,12 @@
             <td>${time.golsPro}</td>
             <td>${time.golsContra}</td>
             <td>${time.saldoGols}</td>
+            <td>
+               ${time.ultimos5.map(r => {
+              const cor = r === 'v' ? 'bg-success' : r === 'd' ? 'bg-danger' : 'bg-secondary';
+              return `<span class="d-inline-block rounded-circle ${cor}" style="width: 12px; height: 12px; margin: 0 2px;"></span>`;
+              }).join('')}
+            </td>
           `;
           tbody.appendChild(linha);
         });

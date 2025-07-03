@@ -250,6 +250,34 @@ if (gols_time_casa > gols_time_fora) {
       ...item
     }));
 
+    // Inicializa histórico de cada time
+const historico = {};
+
+// Preenche os resultados por ordem de data
+jogos.sort((a, b) => new Date(a.data) - new Date(b.data)).forEach(jogo => {
+  const { time_casa, time_fora, gols_time_casa, gols_time_fora } = jogo;
+
+  if (!historico[time_casa]) historico[time_casa] = [];
+  if (!historico[time_fora]) historico[time_fora] = [];
+
+  if (gols_time_casa > gols_time_fora) {
+    historico[time_casa].push('v');
+    historico[time_fora].push('d');
+  } else if (gols_time_fora > gols_time_casa) {
+    historico[time_fora].push('v');
+    historico[time_casa].push('d');
+  } else {
+    historico[time_casa].push('e');
+    historico[time_fora].push('e');
+  }
+});
+
+// Limita aos últimos 5
+Object.keys(tabela).forEach(time => {
+  tabela[time].ultimos5 = (historico[time] || []).slice(-5);
+});
+
+
     res.json(classificacao);
   });
 });
