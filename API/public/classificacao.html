@@ -8,6 +8,15 @@
 <body class="bg-light">
   <div class="container mt-5">
     <h2 class="mb-4">🏆 Classificação - Brasileirão 2025</h2>
+
+    <!-- 🏷️ Legenda de cores -->
+    <div class="mb-3">
+      <span class="badge bg-success">G4 - Libertadores</span>
+      <span class="badge bg-warning text-dark">Sul-Americana (5º a 12º)</span>
+      <span class="badge bg-danger">Z4 - Rebaixamento</span>
+    </div>
+
+    <!-- 📊 Tabela de classificação -->
     <table class="table table-striped table-bordered text-center">
       <thead class="table-dark">
         <tr>
@@ -38,12 +47,22 @@
         const tbody = document.getElementById('tabelaClassificacao');
         tbody.innerHTML = '';
 
-        classificacao.forEach(time => {
+        classificacao.forEach((time, index) => {
           const linha = document.createElement('tr');
+
+          // 🎨 Aplica cores conforme posição
+          if (index < 4) {
+            linha.classList.add('table-success'); // G4
+          } else if (index >= 4 && index < 12) {
+            linha.classList.add('table-warning'); // Sul-Americana
+          } else if (index >= classificacao.length - 4) {
+            linha.classList.add('table-danger'); // Z4
+          }
+
           linha.innerHTML = `
             <td>${time.posicao}</td>
             <td class="text-start">
-              <img src="${time.escudo}" alt="${time.time}" width="25" class="me-2">
+              <img src="${time.escudo}" alt="Escudo do ${time.time}" width="25" class="me-2">
               ${time.time}
             </td>
             <td>${time.pontos}</td>
