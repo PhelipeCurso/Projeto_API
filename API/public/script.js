@@ -1,4 +1,4 @@
-const API_URL = 'https://projetoapi-production-a6f9.up.railway.app/jogos';
+const API_URL = 'https://projeto-api.onrender.com/jogos';
 
 function carregarJogos() {
   const filtro = document.getElementById('filtroCompeticao').value;
@@ -43,7 +43,7 @@ function carregarJogos() {
 }
 
 function carregarClassificacao() {
-  const url = 'https://projetoapi-production-a6f9.up.railway.app/classificacao?competicao=brasileirao';
+  const url = 'https://projeto-api.onrender.com/classificacao?competicao=brasileirao';
 
   fetch(url)
     .then(res => res.json())
