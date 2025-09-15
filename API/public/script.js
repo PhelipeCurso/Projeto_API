@@ -1,4 +1,5 @@
-const API_URL = 'https://projeto-api.onrender.com/jogos';
+const API_URL = 'https://projeto-api-i4rz.onrender.com/jogos';
+
 
 function carregarJogos() {
   const filtro = document.getElementById('filtroCompeticao').value;
@@ -43,7 +44,8 @@ function carregarJogos() {
 }
 
 function carregarClassificacao() {
-  const url = 'https://projeto-api.onrender.com/classificacao?competicao=brasileirao';
+  const url = 'https://projeto-api-i4rz.onrender.com/classificacao?competicao=brasileirao';
+
 
   fetch(url)
     .then(res => res.json())
