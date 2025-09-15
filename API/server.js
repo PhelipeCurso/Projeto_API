@@ -14,6 +14,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/escudos', express.static(path.join(__dirname, 'public', 'escudos')));
 
+
+// 🔹 Página inicial → home.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'home.html'));
+});
+
 // ---------------------- helpers ----------------------
 function gerarUrlEscudo(nomeTime) {
   if (!nomeTime) return null;
@@ -23,8 +29,9 @@ function gerarUrlEscudo(nomeTime) {
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/\s+/g, '')
     .replace(/[^\w]/g, '');
-  // ajuste a URL para seu deploy (em local pode usar /escudos/<nome>.png)
-  return `https://projetoapi-production-a6f9.up.railway.app/escudos/${nome}.png`;
+  
+  // 🔹 Usa BASE_URL do .env (Render) ou localhost
+  return `${process.env.BASE_URL || 'http://localhost:3000'}/escudos/${nome}.png`;
 }
 
 function normalizeCompeticao(s) {
