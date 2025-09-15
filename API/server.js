@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/escudos', express.static(path.join(__dirname, 'public', 'escudos')));
 
 // ---------------------- helpers ----------------------
@@ -52,7 +52,9 @@ const arquivosPorCompeticao = {
 };
 
 // ---------------------- rotas ----------------------
-
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'home.html'));
+});
 // GET /jogos?competicao=brasileirao
 app.get('/jogos', async (req, res) => {
   const { competicao } = req.query;
