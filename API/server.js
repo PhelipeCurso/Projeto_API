@@ -63,32 +63,36 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'home.html'));
 });
 // GET /jogos?competicao=brasileirao
-app.get('/jogos', async (req, res) => {
+app.get('/jogos', (req, res) => {
   const { competicao } = req.query;
-  if (!competicao) return res.status(400).json({ erro: 'Informe a competição: ?competicao=brasileirao' });
+  if (!competicao) {
+    return res.status(400).json({ erro: 'Informe a competição: ?competicao=brasileirao' });
+  }
 
   const compNorm = normalizeCompeticao(competicao);
+  const nomeArquivo = arquivosPorCompeticao[compNorm];
+
+  if (!nomeArquivo) {
+    return res.status(400).json({ erro: 'Competição inválida' });
+  }
+
+  const caminho = path.join(__dirname, 'dados', nomeArquivo);
+
   try {
-    const snapshot = await db.collection('jogos')
-      .where('competicao', '==', compNorm)
-      .get();
+    const raw = fs.readFileSync(caminho, 'utf8');
+    const jogos = JSON.parse(raw);
 
-    if (snapshot.empty) return res.json([]);
+    // adiciona escudos
+    const jogosComEscudos = jogos.map(jogo => ({
+      ...jogo,
+      escudo_time_casa: gerarUrlEscudo(jogo.time_casa),
+      escudo_time_fora: gerarUrlEscudo(jogo.time_fora)
+    }));
 
-    const jogos = snapshot.docs.map(doc => {
-      const jogo = doc.data();
-      return {
-        id: doc.id,
-        ...jogo,
-        escudo_time_casa: gerarUrlEscudo(jogo.time_casa),
-        escudo_time_fora: gerarUrlEscudo(jogo.time_fora)
-      };
-    });
-
-    res.json(jogos);
+    res.json(jogosComEscudos);
   } catch (error) {
-    console.error('GET /jogos erro:', error);
-    res.status(500).json({ erro: 'Erro ao carregar os jogos do Firestore' });
+    console.error('Erro ao ler JSON:', error);
+    res.status(500).json({ erro: 'Erro ao carregar os jogos' });
   }
 });
 
