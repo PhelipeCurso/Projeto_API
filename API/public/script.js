@@ -43,7 +43,7 @@ function carregarJogos() {
     .catch(err => console.error('Erro ao carregar os jogos:', err));
 }
 
-/*function carregarClassificacao() {
+function carregarClassificacao() {
   const url = 'https://projeto-api-i4rz.onrender.com/classificacao?competicao=brasileirao';
 
 
@@ -73,11 +73,11 @@ function carregarJogos() {
     .catch(err => {
       console.error('Erro ao carregar a classificação:', err);
     });
-}*/
+}
 
 // Carregar os jogos e a classificação ao abrir a página
 carregarJogos();
-//carregarClassificacao();
+carregarClassificacao();
 
 // 🔥 Função para abrir o modal e preencher dados
 function editarPlacar(id, competicao) {
