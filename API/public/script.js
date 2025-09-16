@@ -77,7 +77,7 @@ function carregarJogos() {
 
 // Carregar os jogos e a classificação ao abrir a página
 carregarJogos();
-carregarClassificacao();
+//carregarClassificacao();
 
 // 🔥 Função para abrir o modal e preencher dados
 function editarPlacar(id, competicao) {
