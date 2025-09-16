@@ -43,51 +43,53 @@
     const CLASSIFICACAO_URL = 'https://projeto-api-i4rz.onrender.com/classificacao?competicao=brasileirao';
 
     fetch(CLASSIFICACAO_URL)
-      .then(res => res.json())
-      .then(classificacao => {
-        const tbody = document.getElementById('tabelaClassificacao');
-        tbody.innerHTML = '';
+  .then(res => res.json())
+  .then(data => {
+    const classificacao = data.classificacao || data; // garante array
+    const tbody = document.getElementById('tabelaClassificacao');
+    tbody.innerHTML = '';
 
-        classificacao.forEach((time, index) => {
-          const linha = document.createElement('tr');
+    classificacao.forEach((time, index) => {
+      const linha = document.createElement('tr');
 
-          // 🎨 Aplica cores conforme posição
-          if (index < 4) {
-            linha.classList.add('table-success'); // G4
-          } else if (index >= 4 && index < 12) {
-            linha.classList.add('table-warning'); // Sul-Americana
-          } else if (index >= classificacao.length - 4) {
-            linha.classList.add('table-danger'); // Z4
-          }
+      // 🎨 cores por posição
+      if (index < 4) {
+        linha.classList.add('table-success'); // G4
+      } else if (index >= 4 && index < 12) {
+        linha.classList.add('table-warning'); // Sul-Americana
+      } else if (index >= classificacao.length - 4) {
+        linha.classList.add('table-danger'); // Z4
+      }
 
-          linha.innerHTML = `
-            <td>${time.posicao}</td>
-            <td class="text-start">
-              <img src="${time.escudo}" alt="Escudo do ${time.time}" width="25" class="me-2">
-              ${time.time}
-            </td>
-            <td>${time.pontos}</td>
-            <td>${time.jogos}</td>
-            <td>${time.vitorias}</td>
-            <td>${time.empates}</td>
-            <td>${time.derrotas}</td>
-            <td>${time.golsPro}</td>
-            <td>${time.golsContra}</td>
-            <td>${time.saldoGols}</td>
-            <td>
-               ${time.ultimos5.map(r => {
-              const cor = r === 'v' ? 'bg-success' : r === 'd' ? 'bg-danger' : 'bg-secondary';
-              return `<span class="d-inline-block rounded-circle ${cor}" style="width: 12px; height: 12px; margin: 0 2px;"></span>`;
-              }).join('')}
-            </td>
-          `;
-          tbody.appendChild(linha);
-        });
-      })
-      .catch(err => {
-        console.error('Erro ao carregar a classificação:', err);
-        alert('Erro ao carregar a classificação.');
-      });
+      linha.innerHTML = `
+        <td>${time.posicao ?? index+1}</td>
+        <td class="text-start">
+          ${time.escudo ? `<img src="${time.escudo}" alt="Escudo" width="25" class="me-2">` : ''}
+          ${time.time ?? time.nome ?? '---'}
+        </td>
+        <td>${time.pontos ?? 0}</td>
+        <td>${time.jogos ?? 0}</td>
+        <td>${time.vitorias ?? 0}</td>
+        <td>${time.empates ?? 0}</td>
+        <td>${time.derrotas ?? 0}</td>
+        <td>${time.golsPro ?? 0}</td>
+        <td>${time.golsContra ?? 0}</td>
+        <td>${time.saldoGols ?? 0}</td>
+        <td>
+          ${Array.isArray(time.ultimos5) ? time.ultimos5.map(r => {
+            const cor = r === 'v' ? 'bg-success' : r === 'd' ? 'bg-danger' : 'bg-secondary';
+            return `<span class="d-inline-block rounded-circle ${cor}" style="width: 12px; height: 12px; margin: 0 2px;"></span>`;
+          }).join('') : ''}
+        </td>
+      `;
+      tbody.appendChild(linha);
+    });
+  })
+  .catch(err => {
+    console.error('Erro ao carregar a classificação:', err);
+    alert('Erro ao carregar a classificação.');
+  });
+
   </script>
 </body>
 </html>
